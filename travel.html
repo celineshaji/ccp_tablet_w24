@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travel</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        .travel-grid-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px; 
+        }
+        .travel-grid-container img {
+            /* width: 15%;  */
+            max-width: 100%;
+            width: 30%;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+            /* Adjusting for tablet view */
+            .travel-grid-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .travel-grid-container img {
+                width: 60%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            /* Adjusting for phone view */
+            .travel-grid-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href = "#main" class="skip-main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <div class="flex-container">
+                <a href = "index.html">Home</a>
+                <div class="dropdown-pet">
+                    <a href = "pets.html">Pets</a>
+                    <div class="dropdown-pet-content">
+                        <a href="pets.html#bacon">Bacon Q Dog</a>
+                        <a href="pets.pluto">Pluto</a>
+                        <a href="pets.html#juno">Juno</a>
+                        <a href="pets.html#vangogh">Van Gogh</a>
+                        <a href="pets.html#maple">Maple</a>
+                    </div>
+                </div>
+                <div class="dropdown-recipe">
+                    <a href = "recipes.html">Recipes</a>
+                    <div class="dropdown-recipe-content">
+                        <a href="recipes.html#cookie">Double Chocolate Cookies</a>
+                        <a href="recipes.html#bread">Chocolate Chip Banana Bread</a>
+                        <a href="recipes.html#mac">Homemade Mac & Cheese</a>
+                    </div>
+                </div>
+                <div class="dropdown-travel">
+                    <a class="active" href = "travel.html">Travel</a>
+                    <div class="dropdown-travel-content">
+                        <a href="travel.html#yellowstone">Yellow Stone National Park</a>
+                        <a href="travel.html#boulder">Boulder Colorado</a>
+                        <a href="travel.html#niagara">Niagara Falls</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>Travel</h1>
+    </header>
+
+    <main id="main">
+        <div id="yellowstone">
+            <h2>Yellow Stone National Park</h2>
+            <div>
+                <img src="images/yellowstone_travertine.JPG" width="400" alt="crystalline limestone that forms in mineral springs" class="center">
+            </div>  
+            <p><b>Geographical Location: </b> Wyoming</p>
+            <p>Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot. Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous, Old Faithful. It's also home to hundreds of animal species, including bears, wolves, bison, elk and antelope.</p>
+            
+            <h3>Photo Gallery</h3>
+            <div class="travel-grid-container">
+                <img src="images/yellowstone_cauldron.jpg" width="500" alt="deep crater covers a large proportion of the Yellowstone National Park.">
+                <img src="images/yellowstone_sunset.jpg" width="500" alt="a photograph of a sunset in yellowstone national park.">
+                <img src="images/Grand_Canyon_of_yellowstone.jpg" width="500" alt="waterfall bewteen mountains and trees."> 
+            </div> 
+        </div>
+        
+
+        <div id="boulder">
+            <h2>Boulder Colorado</h2>
+            <div>
+                <img src="images/Boulder_Colorado_Still_Image.png" width="400" alt="A scenic photograph of boulder, colorado."class="center">
+            </div>
+            <p><b>Geographical Location: </b>Colorado </p>
+            <p>Boulder, Colorado is where the Buffalo Roam. There are many hiking locations near the city center, most notably Chautauqua Park.Boulder, Colorado is a small city of about 104,000 people, about a quarter of which are students that attend the University of Colorado. They city is a vibrant start-up hub that is a center for technology and innovation much like Ann Arbor is.</p>
+            <h3>Photo Gallery</h3>
+            <div class="travel-grid-container">
+                <img src="images/boulder_colorado_winter.jpeg" width="500" alt="a pciture of the city in the winter">
+                <img src="images/boulder_colorado_downtown.avif" width="500" alt="a picture of the downtown area of the city">
+                <img src="images/bc city .jpeg" width="500" alt="mixture of the city and the mountain view">
+            </div>
+        </div>
+
+
+        <div id="niagara">
+            <h2>Niagara Falls</h2>
+            <div>
+                <img src="images/Niagara_Falls_jpg.png" width="400" alt="an aerial view of niagara falls"class="center">
+            </div>
+            <p><b>Geographical Location: </b>North America</p>
+            <p>Niagara Falls is located on the border between Canada and the United States. Connecting Lake Erie and Lake Ontario, Niagara Falls has the highest flow rate of any waterfall in North America. Niagara Falls draws in thousands of visitors every year, and for good reason. As such, there are numerous things that you can see while you visit the falls, and it is very easy to make a full trip out of seeing this wonderful sight.</p>
+            <h3>Photo Gallery</h3>
+            <div class="travel-grid-container">
+                <img src="images/niagara-falls-frozen.jpg" alt="a photo of frozen Niagara Falls during the winter">
+                <img src="images/niagara_falls_night.jpeg" alt="a photo of Niagara Falls at night with all of the colorful lights in the water">
+                <img src="images/niagara people.jpeg" alt="people standing and watching the Niagara falls">
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipes</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        .recipe-grid-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px; 
+        }
+        .recipe-grid-container img {
+            /* width: 20%;  */
+            max-width: 100%;
+            width: 30%;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+            /* Adjusting for tablet view */
+            .recipe-grid-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .recipe-grid-container img {
+                width: 60%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            /* Adjusting for phone view */
+            .recipe-grid-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href = "#main" class="skip-main">Skip to Main Content</a>  
+    <header>
+        <nav>
+            <div class="flex-container">
+                <a href = "index.html">Home</a>
+                <div class="dropdown-pet">
+                    <a href = "pets.html">Pets</a>
+                    <div class="dropdown-pet-content">
+                        <a href="pets.html#bacon">Bacon Q Dog</a>
+                        <a href="pets.#pluto">Pluto</a>
+                        <a href="pets.html#juno">Juno</a>
+                        <a href="pets.html#vangogh">Van Gogh</a>
+                        <a href="pets.html#maple">Maple</a>
+                    </div>
+                </div>
+                <div class="dropdown-recipe">
+                    <a class="active" href = "recipes.html">Recipes</a>
+                    <div class="dropdown-recipe-content">
+                        <a href="recipes.html#cookie">Double Chocolate Cookies</a>
+                        <a href="recipes.html#bread">Chocolate Chip Banana Bread</a>
+                        <a href="recipes.html#mac">Homemade Mac & Cheese</a>
+                    </div>
+                </div>
+                <div class="dropdown-travel">
+                    <a href = "travel.html">Travel</a>
+                    <div class="dropdown-travel-content">
+                        <a href="travel.html#yellowstone">Yellow Stone National Park</a>
+                        <a href="travel.html#boulder">Boulder Colorado</a>
+                        <a href="travel.html#niagara">Niagara Falls</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>Recipes</h1>
+    </header>
+
+    <main id="main">
+        <div id="cookie">
+            <h2>Double Chocolate Chip Cookies</h2>
+            
+            <!-- <div class ="image-grid-recipes"> -->
+                <img src="images/double_chocolate_cookies.png" width="400" alt="Stock photograph of a stack of double chocolate chip cookies." class="center">
+            <!-- </div> -->
+            <p>Double chocolate chip cookies are a delicious variation of traditional chocolate chip cookies, with an extra dose of chocolate.</p> 
+            <p>Origin: Michigan, Source: Family Recipe, Category: Dessert</p>
+            
+            <h3>Recipe Ingredients</h3>
+            <ol type="a">
+                <li>Unsalted butter</li>
+                <li>Granulated Sugar</li>
+                <li>Packed light or dark brown sugar</li>
+                <li>Pure vanilla extract</li>
+                <li>Semi-sweet chocolate chunks (melted)</li>
+                <li>All-purpose flour </li>
+                <li>Natural unsweetened cocoa powder</li>
+                <li>Baking soda</li>
+                <li>Salt</li>
+                <li>Semi-sweet chocolate chunks</li>
+            </ol>
+
+            <h3>Recipe Steps</h3>
+            <ol type="a">
+                <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                <li>Add the egg and vanilla extract and beat well</li>
+                <li>Add the melted chocolate</li>
+                <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt.</li>
+                <li>Combine the wet and dry ingredients</li>
+                <li>Add the unmelted chocolate chunks.</li>
+                <li>Form 15 cookies and place on a baking sheet.</li>
+                <li>Cooke for 12 to 13 minutes at 350 degrees.</li>
+            </ol>
+
+            <h3>Additional Food Images</h3>
+            <div class= "recipe-grid-container">
+                <img src="images/Double-Chocolate-Cookies-with-Pecans.jpg" width ="500" alt="cookies ontop of a baking sheet, two are bitten">
+                <img src="images/l-intro-1658434736.jpg" width ="500" alt="Cookies going into the oven">
+                <img src = "images/callebaut-semisweet-mini-chocolate-chips-16-oz-1__76269.jpg" width ="500" alt="A small pile of chocolate chips">
+            </div>
+        </div>
+
+
+        <div id="bread">
+            <h2>Chocolate Chip Banana Bread</h2>
+
+            <div class="image-grid-recipes">
+                <img src="images/chocolate_chip_banana_bread.png" width="400" alt="Chocolate Chip Banana Bread"class="center">
+            </div>
+
+            <p>Chocolate chip banana bread is a delicious baked treat that combines the flavors of ripe bananas and chocolate chips in a moist and flavorful bread. </p>
+            <p>Origin: American, Source:Online Chocolate Chip Recipe, Category: Dessert </p>
+
+            <h3>Recipe Ingredients</h3>
+            <ol type="a">
+                <li>Cooking spray</li>
+                <li>2 cups (240 g) all-purpose flour</li>
+                <li>1 tsp. baking soda</li>
+                <li>1/2 tsp. kosher salt</li>
+                <li>1 large egg plus 1 egg yolk</li>
+                <li>1 cup (200 g) granulated sugar</li>
+                <li>1/2 cup (1 stick) unsalted butter, melted</li>
+                <li>1/4 cup sour cream</li>
+                <li>1 tsp. pure vanilla extract</li>
+                <li>3 ripe bananas, mashed</li>
+                <li>1/2 cup chopped toasted walnuts</li>
+                <li>1/2 cup semisweet chocolate chips</li>
+            </ol>
+
+            <h3>Recipe Steps</h3>
+            <ol type="a">
+                <li>Preheat the oven to 350º. Line a 9"-by-5" loaf pan with parchment and grease with cooking spray. </li>
+                <li>In a medium bowl, whisk flour, baking soda, and salt.</li>
+                <li>In a large bowl, mix egg, egg yolk, granulated sugar, butter, sour cream, and vanilla. Add bananas and stir until combined. Gradually add dry ingredients to banana mixture until just combined.</li>
+                <li>Fold in walnuts and chocolate chips and transfer to prepared pan.</li>
+                <li>Bake bread until a tester inserted into the center comes out clean, about 1 hour. Let cool 10 minutes in pan, then invert onto a wire rack and let cool completely.</li>
+            </ol>
+            <hr style="width:100%;text-align:left;margin-left:0">
+
+            <h3>Additional Food Images</h3>
+            <div class ="recipe-grid-container">
+                <img src="images/Pumpkin-Chocolate-Chip-Bread-5.jpg" width ="300" alt="close of slices of chocolate chip bread">
+                <img src="images/Chocolate-Chip-Zucchini-Bread-1-of-1-4.jpg" width ="300"alt="close up of a loaf of chocolate chip bread">
+                <img src = "images/Chocolate-Chip-Banana-Bread-9300.jpg"width ="300" alt="slices of chocolate chip bread on a wooden board">
+            </div>
+        </div>
+
+        <div id="mac">
+            <h2>Homemade Mac & Cheese</h2>
+            <div class="image-grid-recipes">
+                <img src="images/mac_and_cheese.jpeg" width="400" alt="Close up imaged of mac and cheese."class="center">
+            </div>
+            <p>Macaroni and cheese, commonly known as mac & cheese, is a comfort food staple that has captured the hearts of people all over the world.</p>
+            <p> Origin: Northern Europe, Source: Online Mac & Cheese Recipe, Category: Main Dish</p>
+            
+            <h3>Recipe Ingredients</h3>
+            <ol type="a">
+                <li>Macaroni</li>
+                <li>Butter and flour</li>
+                <li>Milk</li>
+                <li>Cheese</li>
+                <li>Seasonings</li>
+                <li>Bread crumbs</li>
+            </ol>
+
+            <h3>Recipe Steps</h3>
+            <ol type="a">
+                <li>Preheat oven to 375°. Grease a 13"x9" baking dish with butter.</li> 
+                <li>In a large pot of boiling salted water, cook macaroni, stirring occasionally, until al dente, 5 to 6 minutes.</li>
+                <li>Drain.</li>
+                <li>In a large saucepan over medium heat, melt 1 stick butter.</li>
+                <li>Sprinkle flour over and cook, stirring, until slightly golden, 2 to 3 minutes.</li>
+                <li>Pour in milk and whisk until combined.</li>
+                <li>Add mustard powder; season with salt and pepper.</li>
+                <li>Bring to a simmer over medium-high heat and cook, stirring, until sauce starts to thicken, about 2 minutes.</li>
+                <li>Remove pan from heat and whisk in cheddar, Gruyère, and 1 cup Parmesan until melted and smooth.</li>
+                <li>Stir in macaroni and transfer to the prepared dish.</li>
+                <li>In a small bowl, combine panko, oil, and remaining 1/2 cup Parmesan.</li>
+                <li>Sprinkle over macaroni; season with more pepper.</li>
+                <li> Bake mac and cheese until bubbly and golden, 25 to 30 minutes.</li>
+                <li>Let cool for 10 minutes.</li>
+            </ol>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-grid-container">
+                <img src="images/14140-baked-macaroni-and-cheese-DDMFS-4x3-011fdc9156644c7bb93c1888f5b993ab.jpg" width ="300" alt="mac and cheese in a tray and on a plate">
+                <img src = "images/Homemade-Mac-and-Cheese-fork.jpg" width ="300" alt="bowl of mac and cheese with a fork">
+                <img src = "images/maccheese.jpg" width ="300" alt="top view of a bowl of mac and cheese">
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
